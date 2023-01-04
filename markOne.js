@@ -21,8 +21,8 @@ let celebrityQues = [{
 let score = 0;
 
 function playGame(answerByUser, answer) {
- 
-  if (answerByUser===answer) {
+
+  if (answerByUser === answer) {
     score++;
     console.log("You are correct");
   }
@@ -33,7 +33,7 @@ function playGame(answerByUser, answer) {
 
 for (let start = 0; start < celebrityQues.length; start++) {
   let currQues = celebrityQues[start];
-  let answerByUser = readlineSync.question(currQues.question+": ");
+  let answerByUser = readlineSync.question(currQues.question + ": ");
   playGame(answerByUser, currQues.answer);
 }
 
